@@ -1,0 +1,16 @@
+class Dropdown {
+    constructor(element) {
+        this.element = element
+        this.button = this.element.querySelector('.dropdown-button')
+        this.content = this.element.querySelector('.dropdown-content')
+        
+        this.button.addEventListener('click', () => {
+            this.showMenu()
+        })      
+    }
+    showMenu() {
+        this.content.classList.toggle('dropdown-hidden')
+    }
+}
+
+let menus = document.querySelectorAll('.dropdown').forEach(element => new Dropdown(element))
