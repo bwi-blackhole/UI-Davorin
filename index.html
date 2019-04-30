@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -9,32 +10,40 @@
 
 </head>
 
-
+<img src="img/blackhole.jpg" alt="blackhole picture" class="background-img">
 
 <body>
+    
     <script defer="defer" src="js/dropdown.js"></script>
-    <div>
+    <script defer="defer" src="js/something.js"></script>
+    <script defer="defer" src="js/somethingelse.js"></script>
+
+    <div id="full">
         
         <div class="container">
 
+                            <!--dropdown menu with links to about page and a link to the signup button on the 
+                main page-->
+            <div class="header-container">    
+            <div class="dropdown">
+                <div class="dropdown-button"><img src="img/menu-button.png" alt=""></div>
+                <div class="dropdown-content dropdown-hidden">
+                    <div><a class="dropdown-link" href="about.html">about</a></div>
+                    <div><a class="dropdown-link" href="#log-in">log-in</a></div>
+                </div>
+            </div>
+            <div class="title">BLACKHOLE</div>
+            </div>
 
 
 
             <div class="main-section">
-                <!--dropdown menu with links to about page and a link to the signup button on the 
-                main page-->
-                <div class="dropdown">
-                    <div class="dropdown-button">&#9660</div>
-                    <div class="dropdown-content">
-                        <a class="dropdown-link" href="about.html">about</a>
-                        <a class="dropdown-link" href="">sign up</a>
-                    </div>
-                </div>
                 <!--three features with animations-->
                 <div class="something">
-                    <h1>BLACKHOLE</h1>
-                    <p>something</p>
-                    <p>something</p>
+
+                    <h1>BLACKHOLE LOREM LOREM</h1>
+                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, magni quae unde, quas temporibus cupiditate obcaecati numquam inventore expedita veniam commodi, et officia. Ex animi temporibus debitis in iure eum.s</h2>
+                    <button>LOG IN</button>
                 </div>
 
             </div>
@@ -44,11 +53,11 @@
 
         <!--rows component-->
             <div class="rows">
-
-                <div>something</div>
-                <div>something</div>
-                <div>something</div>
-
+                <div class="left-button">&#8882<img src="" alt=""></div>
+                <div data-target="box"class="something-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, incidunt sint excepturi distinctio laborum alias aut deleniti suscipit nulla repellendus illo atque voluptas odio doloremque iure ad itaque vel quasi.</div>
+                <div class="something-box something-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis natus iste neque dolorum sapiente ab. Temporibus voluptatem accusantium, laudantium amet illo, esse explicabo itaque facilis fugiat voluptatibus obcaecati quod?</div>
+                <div class="something-box something-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nam ea maiores fugit doloribus neque, iure quisquam saepe, consequatur est nesciunt quia fuga itaque, aspernatur animi officia. Modi, consequatur voluptates.</div>
+                <div class="right-button">&#8883<img src="" alt=""></div>
             </div>
 
 
@@ -65,7 +74,10 @@
 
 
 
-            <div class="cta">cta</div>
+            <div class="cta">
+                <button><a name="log-in"></a>LOG IN</button>
+         
+            </div>
 
 
 
