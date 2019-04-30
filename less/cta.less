@@ -1,10 +1,13 @@
 .cta{
-    height: 100px;
     display: flex;
     width: 100%;
     padding: 0px 20px 0 20px;
-    align-items: center;
+    align-items: flex-start;
     font-size: 1.6rem;
     background-color: orangered;
     color: white;
+    height: 100%;
+    @media @phoneView {
+        max-height: 100px;
+    }
 }

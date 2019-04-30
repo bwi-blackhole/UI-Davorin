@@ -1,12 +1,17 @@
 .cta {
-  height: 100px;
   display: flex;
   width: 100%;
   padding: 0px 20px 0 20px;
-  align-items: center;
+  align-items: flex-start;
   font-size: 1.6rem;
   background-color: orangered;
   color: white;
+  height: 100%;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  .cta {
+    max-height: 100px;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -145,12 +150,13 @@ html {
 html .background-img {
   position: fixed;
   z-index: -1;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 html,
 body {
   font-family: 'Mitr', sans-serif;
+  height: 100%;
 }
 h1,
 h2,
@@ -183,7 +189,7 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  height: 100%;
+  overflow: hidden;
 }
 button {
   background-color: #027fa8;
@@ -281,7 +287,7 @@ a {
   }
 }
 .rows {
-  height: 200px;
+  height: 100%;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -309,12 +315,17 @@ a {
   cursor: pointer;
 }
 .rows .something-box {
-  padding: 30px;
+  padding: 30px 0 30px 0;
   font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 @media (min-width: 0px) and (max-width: 500px) {
   .rows .something-box {
     margin: 10px 0 10px 0;
     padding: 0;
   }
+}
+.rows .something-hidden {
+  display: none;
 }
