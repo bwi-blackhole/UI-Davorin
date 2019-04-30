@@ -13,9 +13,17 @@ class Carousel {
         })
     }
         someFunc() {
-            alert(Array.from(this.box)
+            if (Carousel.index > -1) {
+            this.box[Carousel.index].classList.toggle('something-hidden')
+            Carousel.index--
+            }
+            else Carousel.index = (Array.from(document.querySelectorAll('.something-box')).length) - 1
+        
     }
 }
+
+Carousel.index = (Array.from(document.querySelectorAll('.something-box')).length) - 1
+
     
 
 
