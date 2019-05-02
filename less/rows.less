@@ -7,18 +7,32 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 10px 0 10px;
-
-    background-color: orangered;
+background-color: orangered;
     color: white;
+
+    .feature-title {
+        font-size: 6rem;
+        color: white;
+    }
+    .feature-title-hidden {
+        display: none;
+    }  
+
     @media @phoneView {
         width: 100%;
-        height: 100%;
+        height: 600px;
+        
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
+   
+        justify-content: center;
+        
         padding: 0;
+ 
 
     }
+    }
+
 
     .right-button {
         font-size: 4rem;
@@ -30,22 +44,22 @@
         cursor: pointer;
     }
 
-    .something-box {
-        padding: 30px 0 30px 0;
-        font-size: 2rem;
+    .feature-box {
+display: none;
+    }
+
+       .feature-selected {
+        padding: 30px 9px 30px 9px;
+        font-size: 3rem;
         display: flex;
         flex-wrap: wrap;
+        opacity: 1;
 
-        @media @phoneView {
-           margin: 10px 0 10px 0;
-          padding: 0;
-            
-        }
  
-    }
-       .something-hidden {
-            display: none;
           }
 
-    
-}
+     
+
+        
+ 
+ 

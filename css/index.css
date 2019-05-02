@@ -4,9 +4,10 @@
   padding: 0px 20px 0 20px;
   align-items: flex-start;
   font-size: 1.6rem;
-  background-color: orangered;
   color: white;
   height: 100%;
+  background-color: black;
+  opacity: 0.7;
 }
 @media (min-width: 0px) and (max-width: 500px) {
   .cta {
@@ -152,6 +153,7 @@ html .background-img {
   z-index: -1;
   width: 100%;
   height: 100%;
+  opacity: 0.3;
 }
 html,
 body {
@@ -205,21 +207,23 @@ button {
   font-family: Mitr;
   margin: 20px 0 20px 0;
   cursor: pointer;
+  opacity: 1;
 }
 a {
   text-decoration: none;
   color: white;
 }
 .header-container {
-  width: 100%;
+  width: 200%;
   max-width: 800px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: orangered;
-  color: black;
+  color: white;
   position: fixed;
+  z-index: 99;
+  background-color: orangered;
 }
 @media (min-width: 0px) and (max-width: 500px) {
   .header-container {
@@ -266,8 +270,9 @@ a {
   justify-content: space-around;
   align-items: center;
   font-size: 1.6rem;
-  background-color: black;
   color: white;
+  background-color: black;
+  opacity: 0.7;
 }
 .main-section {
   display: flex;
@@ -275,6 +280,7 @@ a {
   height: 100%;
   padding: 60px 20px 0 20px;
   background-color: black;
+  opacity: 0.7;
   color: white;
 }
 .main-section .main-title {
@@ -309,36 +315,38 @@ a {
   background-color: orangered;
   color: white;
 }
+.rows .feature-title {
+  font-size: 6rem;
+  color: white;
+}
+.rows .feature-title-hidden {
+  display: none;
+}
 @media (min-width: 0px) and (max-width: 500px) {
   .rows {
     width: 100%;
-    height: 100%;
+    height: 600px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 0;
   }
 }
-.rows .right-button {
+.right-button {
   font-size: 4rem;
   cursor: pointer;
 }
-.rows .left-button {
+.left-button {
   font-size: 4rem;
   cursor: pointer;
 }
-.rows .something-box {
-  padding: 30px 0 30px 0;
-  font-size: 2rem;
+.feature-box {
+  display: none;
+}
+.feature-selected {
+  padding: 30px 9px 30px 9px;
+  font-size: 3rem;
   display: flex;
   flex-wrap: wrap;
-}
-@media (min-width: 0px) and (max-width: 500px) {
-  .rows .something-box {
-    margin: 10px 0 10px 0;
-    padding: 0;
-  }
-}
-.rows .something-hidden {
-  display: none;
+  opacity: 1;
 }
