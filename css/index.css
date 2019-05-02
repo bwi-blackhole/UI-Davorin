@@ -266,6 +266,7 @@ a {
 .main-footer {
   height: 100px;
   display: flex;
+  max-width: 800px;
   width: 100%;
   justify-content: space-around;
   align-items: center;
