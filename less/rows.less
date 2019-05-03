@@ -1,5 +1,4 @@
 .rows{
-   
     height: 100%;
     height: 400px;
     display: flex;
@@ -7,13 +6,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 10px 0 10px;
-background-color: orangered;
+    background-color: orangered;
     color: white;
+    opacity: .8;
 
     .feature-title {
         font-size: 6rem;
         color: white;
+        opacity: .9;
     }
+
     .feature-title-hidden {
         display: none;
     }  
@@ -21,18 +23,12 @@ background-color: orangered;
     @media @phoneView {
         width: 100%;
         height: 600px;
-        
         display: flex;
         flex-wrap: wrap;
-   
         justify-content: center;
-        
         padding: 0;
- 
-
     }
-    }
-
+}
 
     .right-button {
         font-size: 4rem;
@@ -45,7 +41,7 @@ background-color: orangered;
     }
 
     .feature-box {
-display: none;
+        display: none;
     }
 
        .feature-selected {
@@ -54,9 +50,7 @@ display: none;
         display: flex;
         flex-wrap: wrap;
         opacity: 1;
-
- 
-          }
+}
 
      
 
