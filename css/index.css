@@ -319,9 +319,11 @@ a {
 }
 .main-section .main-title {
   padding: 30px 0 60px 0;
+  opacity: 0.8;
 }
 .main-section .main-text {
   padding: 0 0 60px 0;
+  opacity: 0.9;
 }
 @media (min-width: 0px) and (max-width: 500px) {
   .main-section {
@@ -344,10 +346,12 @@ a {
   padding: 0 10px 0 10px;
   background-color: orangered;
   color: white;
+  opacity: 0.8;
 }
 .rows .feature-title {
   font-size: 6rem;
   color: white;
+  opacity: 0.9;
 }
 .rows .feature-title-hidden {
   display: none;
